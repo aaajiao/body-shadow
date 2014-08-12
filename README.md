@@ -5,18 +5,17 @@ space tattooing<br>
 how meridian system to tattoo
 
 The meridian system (simplified Chinese: 经络; traditional Chinese: 經絡; pinyin: jīngluò, also called channel network) is a traditional Chinese medicine belief about a path through which the life-energy known as "qi" flows.
-
-http://en.wikipedia.org/wiki/Meridian_(Chinese_medicine)
+<br>http://en.wikipedia.org/wiki/Meridian_(Chinese_medicine)
 
 <b>Reference:</b>
 
-间隙维 
+间隙维<br> 
 http://bbs.sciencenet.cn/forum.php?mod=viewthread&tid=12050
 
-分形论概述及在中医经络中的应用与前景:中医分形集 
+分形论概述及在中医经络中的应用与前景:中医分形集<br>
 http://www.cppblog.com/hongel/archive/2006/08/19/11436.html
 
-福州大学生物工程研究所
+福州大学生物工程研究所<br>
 http://ibfu.fzu.edu.cn/ibfu-research/item/10-%E7%BB%8F%E7%BB%9C%E7%A0%94%E7%A9%B6.html
 
 
