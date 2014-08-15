@@ -7,6 +7,9 @@ how meridian system to tattoo</h3>
 The meridian system (simplified Chinese: 经络; traditional Chinese: 經絡; pinyin: jīngluò, also called channel network) is a traditional Chinese medicine belief about a path through which the life-energy known as "qi" flows.
 <br>http://en.wikipedia.org/wiki/Meridian_(Chinese_medicine)
 
+Project at GIthub <a href="https://github.com/aaajiao/body-shadow" target="_blank">https://github.com/aaajiao/body-shadow</a>
+& Vimeo <a href="https://vimeo.com/103220984" target="_blank">https://vimeo.com/103220984</a>
+
 <b>Reference:</b>
 
 间隙维<br> 
