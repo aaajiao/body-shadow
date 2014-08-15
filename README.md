@@ -23,3 +23,5 @@ http://ibfu.fzu.edu.cn/ibfu-research/item/10-%E7%BB%8F%E7%BB%9C%E7%A0%94%E7%A9%B
 
 
 <b>XU CONG</b> is an new media and interactive designer , and a creative coder with VVVV. He is familiar with projection mapping technology and exploring new interactive ways. His work “Spectrum” was exhibited in Shanghai International Science & Art. He took part in some architecture mapping performs cooperating with artists lately.
+
+<b>Che Yejiong</b> is a doctor of traditional Chinese medicine ,he is engaged in the Chinese medicine diagnosis and treatment of diseases in department of internal diseases‍ and pediatric diseases。‍He graduated from the Shanghai University of Traditional Chinese Medicine in august 2005 and received a master‘s degree。He is now working and living in Hangzhou.
