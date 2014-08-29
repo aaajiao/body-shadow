@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta32.0.dtd" >
-   <PATCH nodename="E:\Tattoo\BodyShadow1.0\CreateTattoo.v4p" systemname="CreateTattoo" filename="E:\Tattoo\main\CreateTattoo.v4p">
-   <BOUNDS type="Window" left="8640" top="7395" width="14685" height="15600">
+   <PATCH nodename="E:\Tattoo\BodyShadow1.1\CreateTattoo.v4p" systemname="CreateTattoo" filename="E:\Tattoo\main\CreateTattoo.v4p">
+   <BOUNDS type="Window" left="9135" top="600" width="14685" height="15600">
    </BOUNDS>
    <PACK Name="addonpack" Version="31.9.0">
    </PACK>
@@ -26,6 +26,10 @@
    <PIN pinname="EX9 Out" visible="1">
    </PIN>
    <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="D24X8">
+   </PIN>
+   <PIN pinname="Backbuffer Width" slicecount="1" values="1024">
+   </PIN>
+   <PIN pinname="Backbuffer Height" slicecount="1" values="1024">
    </PIN>
    </NODE>
    <NODE systemname="Ortho (Transform)" nodename="Ortho (Transform)" componentmode="Hidden" id="35">
@@ -461,7 +465,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="8865" top="10950" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0" visible="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -483,28 +487,6 @@
    <LINK srcnodeid="18" srcpinname="Output" dstnodeid="14" dstpinname="X">
    </LINK>
    <LINK srcnodeid="21" srcpinname="Y Output Value" dstnodeid="28" dstpinname="Clear">
-   </LINK>
-   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InABox" id="2">
-   <BOUNDS type="Node" left="3585" top="9945" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="3585" top="9945" width="1500" height="960">
-   </BOUNDS>
-   <BOUNDS type="Window" left="12495" top="7305" width="6240" height="5040">
-   </BOUNDS>
-   <PIN pinname="Layers" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="FullscreenQuad (DX9)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\FullscreenQuad (DX9).v4p" nodename="FullscreenQuad (DX9)" componentmode="Hidden" id="1">
-   <BOUNDS type="Node" left="3585" top="9330" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
-   </PIN>
-   <BOUNDS type="Box" left="3585" top="9330">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="1" srcpinname="Layer" dstnodeid="2" dstpinname="Layers">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="0" systemname="IOBox (Node)">
    <BOUNDS type="Box" left="1350" top="2655" width="795" height="240">
@@ -603,8 +585,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="28" srcpinname="EX9 Out" dstnodeid="42" dstpinname="Source">
-   </LINK>
-   <LINK srcnodeid="42" srcpinname="Texture Out" dstnodeid="1" dstpinname="Texture">
    </LINK>
    <LINK srcnodeid="42" srcpinname="Texture Out" dstnodeid="5" dstpinname="Texture">
    </LINK>
