@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta32.0.dtd" >
-   <PATCH nodename="E:\Tattoo\BodyShadow1.1\CreateTattoo.v4p" systemname="CreateTattoo" filename="E:\Tattoo\main\CreateTattoo.v4p">
+   <PATCH nodename="E:\Tattoo\BodyShadow1.1 - 副本\CreateTattoo.v4p" systemname="CreateTattoo" filename="E:\Tattoo\main\CreateTattoo.v4p">
    <BOUNDS type="Window" left="9135" top="600" width="14685" height="15600">
    </BOUNDS>
    <PACK Name="addonpack" Version="31.9.0">
@@ -549,7 +549,7 @@
    <LINK srcnodeid="19" srcpinname="Y Output Value" dstnodeid="22" dstpinname="Down">
    </LINK>
    <NODE nodename="IOBox (Color)" componentmode="InABox" id="40" systemname="IOBox (Color)">
-   <BOUNDS type="Box" left="1680" top="5895" width="2250" height="480">
+   <BOUNDS type="Box" left="1680" top="5895" width="360" height="375">
    </BOUNDS>
    <BOUNDS type="Node" left="1680" top="5895" width="0" height="0">
    </BOUNDS>

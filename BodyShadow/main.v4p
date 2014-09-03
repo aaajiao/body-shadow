@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta32.0.dtd" >
-   <PATCH nodename="E:\Tattoo\BodyShadow1.1\main.v4p" systemname="01.04.applyforce__Test" filename="E:\Tattoo\BulletSamples\Sample Patches\01.04.applyforce__Test.v4p">
+   <PATCH nodename="E:\Tattoo\BodyShadow1.1 - 副本\main.v4p" systemname="01.04.applyforce__Test" filename="E:\Tattoo\BulletSamples\Sample Patches\01.04.applyforce__Test.v4p">
    <BOUNDS type="Window" left="11610" top="825" width="16545" height="13080">
    </BOUNDS>
    <NODE systemname="DX9Texture (EX9.Texture)" nodename="DX9Texture (EX9.Texture)" componentmode="Hidden" id="10">
@@ -95,7 +95,7 @@
    <NODE systemname="LegModel" filename="LegModel.v4p" nodename="LegModel.v4p" componentmode="Hidden" id="230">
    <BOUNDS type="Node" left="6300" top="9615" width="1530" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="7575" top="5145" width="16380" height="11415">
+   <BOUNDS type="Window" left="9765" top="4335" width="16380" height="11415">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -113,6 +113,8 @@
    </PIN>
    <BOUNDS type="Box" left="6300" top="9615">
    </BOUNDS>
+   <PIN pinname="3d model" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="230" srcpinname="Layer" dstnodeid="9" dstpinname="Layer 3">
    </LINK>
@@ -249,7 +251,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="630" top="16845" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="2475" top="-15" width="8715" height="15615">
+   <BOUNDS type="Window" left="0" top="0" width="8715" height="15615">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>
@@ -521,7 +523,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4185" top="5190" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="Model\LEG_lewpoly_3.x">
+   <PIN pinname="Input String" slicecount="1" values="Model\LEG_lewpoly_cylindrical_UV.x">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="file.x">
    </PIN>
@@ -530,6 +532,8 @@
    <PIN pinname="Maximum Characters" slicecount="1" values="-1">
    </PIN>
    <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="272" srcpinname="Output String" dstnodeid="230" dstpinname="Filename" hiddenwhenlocked="1">
@@ -549,5 +553,25 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="250" srcpinname="Layer" dstnodeid="260" dstpinname="Layers">
+   </LINK>
+   <LINK srcnodeid="272" srcpinname="Output String" dstnodeid="230" dstpinname="3d model" hiddenwhenlocked="1">
+   </LINK>
+   <NODE systemname="PerfMeter (Debug)" filename="%VVVV%\lib\nodes\modules\Debug\PerfMeter (Debug).v4p" nodename="PerfMeter (Debug)" componentmode="Hidden" id="274">
+   <BOUNDS type="Node" left="3435" top="1335" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="275" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="3465" top="1965" width="1305" height="1350">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3465" top="1965" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="20">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="274" srcpinname="fps" dstnodeid="275" dstpinname="Y Input Value">
    </LINK>
    </PATCH>
