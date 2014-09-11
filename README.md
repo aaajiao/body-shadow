@@ -8,7 +8,7 @@ The meridian system (simplified Chinese: 经络; traditional Chinese: 經絡; pi
 <br>http://en.wikipedia.org/wiki/Meridian_(Chinese_medicine)
 
 Project at GIthub <a href="https://github.com/aaajiao/body-shadow" target="_blank">https://github.com/aaajiao/body-shadow</a>
-& Vimeo <a href="https://vimeo.com/103220984" target="_blank">https://vimeo.com/103220984</a> <a href="https://vimeo.com/103989088" target="_blank">https://vimeo.com/103989088</a>
+& Vimeo <a href="https://vimeo.com/103220984" target="_blank">https://vimeo.com/103220984</a> <a href="https://vimeo.com/103989088" target="_blank">https://vimeo.com/103989088</a> <a href="https://vimeo.com/105905606" target="_blank">https://vimeo.com/105905606</a> 
 
 
 <b>Reference:</b>
