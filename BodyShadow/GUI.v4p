@@ -1,8 +1,8 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta32.0.dtd" >
-   <PATCH nodename="E:\Tattoo\BodyShadow1.1 - 副本\GUI.v4p" systemname="GUI" filename="E:\Tattoo\main\GUI.v4p">
-   <BOUNDS type="Window" left="9975" top="1410" width="20145" height="14820">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.3.dtd" >
+   <PATCH nodename="X:\BodyShadow\body-shadow\BodyShadow\GUI.v4p" systemname="GUI" filename="E:\Tattoo\main\GUI.v4p" scrollx="0" scrolly="2160">
+   <BOUNDS type="Window" left="29145" top="0" width="20145" height="14820">
    </BOUNDS>
-   <PACK Name="addonpack" Version="31.9.0">
+   <PACK Name="addonpack" Version="33.3.0">
    </PACK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="12" systemname="IOBox (Node)">
    <BOUNDS type="Box" left="1995" top="16950" width="795" height="240">
@@ -253,7 +253,7 @@
    </BOUNDS>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.93">
+   <PIN pinname="Y Input Value" slicecount="1" values="0.88">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="y">
    </PIN>
@@ -363,7 +363,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="-0.35">
+   <PIN pinname="Input 2" slicecount="1" values="-0.37">
    </PIN>
    </NODE>
    <LINK srcnodeid="149" srcpinname="Y Output Value" dstnodeid="160" dstpinname="Input 1">
@@ -377,7 +377,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="-0.48">
+   <PIN pinname="Input 2" slicecount="1" values="-0.5">
    </PIN>
    </NODE>
    <LINK srcnodeid="149" srcpinname="Y Output Value" dstnodeid="161" dstpinname="Input 1">
@@ -403,7 +403,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="-0.57">
+   <PIN pinname="Input 2" slicecount="1" values="-0.6">
    </PIN>
    </NODE>
    <LINK srcnodeid="162" srcpinname="Output" dstnodeid="163" dstpinname="Input">
@@ -573,11 +573,25 @@
    </PIN>
    <BOUNDS type="Box" left="4920" top="10545">
    </BOUNDS>
-   <PIN pinname="Font" slicecount="1" values="Arial">
+   <PIN pinname="Font" slicecount="1" visible="1" values="Arial">
    </PIN>
    <PIN pinname="Brush Color" slicecount="1" values="|0.00000,0.00000,0.00000,1.00000|">
    </PIN>
    <PIN pinname="Color" slicecount="1" values="|0.51622,0.51622,0.51622,1.00000|">
+   </PIN>
+   <PIN pinname="Bold" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Italic" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Quality" slicecount="1" values="Default">
+   </PIN>
+   <PIN pinname="Show Brush" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Text Rendering Mode" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Width [px] (Multiline Mode)" slicecount="1" values="300">
+   </PIN>
+   <PIN pinname="Enabled" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="174" srcpinname="Layer" dstnodeid="173" dstpinname="Layer 2">
@@ -589,9 +603,9 @@
    </PIN>
    <PIN pinname="Transform In" visible="1">
    </PIN>
-   <PIN pinname="Y" slicecount="1" values="0.03">
+   <PIN pinname="Y" slicecount="1" values="0.04">
    </PIN>
-   <PIN pinname="X" slicecount="1" values="0.05">
+   <PIN pinname="X" slicecount="1" values="0.07">
    </PIN>
    </NODE>
    <NODE systemname="Translate (Transform)" nodename="Translate (Transform)" componentmode="Hidden" id="175">
@@ -619,7 +633,7 @@
    </PIN>
    <PIN pinname="Switch" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="|0.03802,0.22984,0.00359,1.00000|" visible="1">
+   <PIN pinname="Input 2" slicecount="1" visible="1" values="|0.03802,0.22984,0.00359,1.00000|">
    </PIN>
    <PIN pinname="Input 1" slicecount="1" values="|0.11987,0.11281,0.09210,1.00000|">
    </PIN>
@@ -1379,5 +1393,15 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="242" srcpinname="Output" dstnodeid="177" dstpinname="Input 2">
+   </LINK>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="243" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Box" left="5730" top="9525" width="1590" height="270">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5730" top="9525" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="Arial">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="243" srcpinname="Output Enum" dstnodeid="174" dstpinname="Font">
    </LINK>
    </PATCH>

@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta32.0.dtd" >
-   <PATCH nodename="E:\Tattoo\BodyShadow1.1 - 副本\LegModel.v4p" systemname="LegModel" filename="E:\Tattoo\main\LegModel.v4p">
-   <BOUNDS type="Window" left="9765" top="4335" width="16380" height="11415">
+   <PATCH nodename="E:\Tattoo\BodyShadow1.3\LegModel.v4p" systemname="LegModel" filename="E:\Tattoo\main\LegModel.v4p">
+   <BOUNDS type="Window" left="9435" top="2880" width="16380" height="11415">
    </BOUNDS>
    <PACK Name="addonpack" Version="31.9.0">
    </PACK>
@@ -9,7 +9,7 @@
    </BOUNDS>
    <PIN pinname="Mesh" visible="1">
    </PIN>
-   <PIN pinname="Filename" slicecount="1" values="Model\LEG_lewpoly_3.x" visible="1">
+   <PIN pinname="Filename" slicecount="1" visible="1" values="Model\LEG_lewpoly_3.x">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="2" systemname="IOBox (Node)">
@@ -281,6 +281,10 @@
    </PIN>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
+   <PIN pinname="Width" slicecount="1" values="1000">
+   </PIN>
+   <PIN pinname="Height" slicecount="1" values="1000">
+   </PIN>
    </NODE>
    <LINK srcnodeid="38" srcpinname="EX9 Out" dstnodeid="41" dstpinname="Source">
    </LINK>
@@ -485,7 +489,7 @@
    </PIN>
    <PIN pinname="Texture" visible="1">
    </PIN>
-   <PIN pinname="Color" slicecount="1" values="|0.67192,0.67192,0.67192,1.00000|">
+   <PIN pinname="Color" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
    </PIN>
    <PIN pinname="Enabled" visible="1">
    </PIN>
@@ -713,7 +717,7 @@
    </PIN>
    <PIN pinname="Diffuse Color" pintype="Input" visible="1" slicecount="1" values="|0.49027,0.49027,0.49027,1.00000|">
    </PIN>
-   <PIN pinname="Ambient Color" pintype="Input" visible="1" slicecount="1" values="|0.64783,0.64783,0.64783,1.00000|">
+   <PIN pinname="Ambient Color" pintype="Input" visible="1" slicecount="1" values="|0.93883,0.93883,0.93883,1.00000|">
    </PIN>
    <BOUNDS type="Node" left="7200" top="6555" width="100" height="100">
    </BOUNDS>
@@ -783,5 +787,23 @@
    <LINK srcnodeid="59" srcpinname="Y Output Value" dstnodeid="26" dstpinname="Light Direction XYZ">
    </LINK>
    <LINK srcnodeid="4" srcpinname="Texture Out" dstnodeid="1" dstpinname="Texture">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="75" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="11805" top="960" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="11805" top="960" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|OutputImage\粗细\tattoo - 副本.jpg|">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="image.jpg">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="|All Pictures (*.bmp, *.dds, *.hdr, *.jpg, *.png, *.tif, *.tga)||*.bmp;*.dds;*.hdr;*.jpg;*.png;*.tif;*.tga||Bitmap (*.bmp)||*.bmp||HDR (*.hdr)||*.hdr||DDS (*.dds)||*.dds||JPG (*.jpg)||*.jpg||PNG (*.png)||*.png||TIFF (*.tif)||*.tif||Targa (*.tga)||*.tga|">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="75" srcpinname="Output String" dstnodeid="43" dstpinname="Filename">
    </LINK>
    </PATCH>

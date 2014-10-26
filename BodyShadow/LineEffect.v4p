@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta32.0.dtd" >
-   <PATCH nodename="E:\Tattoo\BodyShadow1.1 - 副本\LineEffect.v4p" systemname="LineEffect" filename="E:\Tattoo\main\LineEffect.v4p">
-   <BOUNDS type="Window" left="8415" top="750" width="16380" height="16500">
+   <PATCH nodename="E:\Tattoo\BodyShadow1.3\LineEffect.v4p" systemname="LineEffect" filename="E:\Tattoo\main\LineEffect.v4p">
+   <BOUNDS type="Window" left="255" top="4395" width="16380" height="8700">
    </BOUNDS>
    <PACK Name="addonpack" Version="31.9.0">
    </PACK>
@@ -553,7 +553,7 @@
    </PIN>
    <PIN pinname="Saturation" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Alpha" slicecount="1" values="0.42">
+   <PIN pinname="Alpha" slicecount="1" values="0.8">
    </PIN>
    <PIN pinname="Lightness" slicecount="1" values="0.6">
    </PIN>
@@ -759,7 +759,7 @@
    </PIN>
    <PIN pinname="Saturation" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Alpha" slicecount="1" values="0.42">
+   <PIN pinname="Alpha" slicecount="1" values="0.8">
    </PIN>
    <PIN pinname="Lightness" slicecount="1" values="1">
    </PIN>
@@ -1055,7 +1055,7 @@
    </PIN>
    <PIN pinname="Alpha" slicecount="1" values="0.42">
    </PIN>
-   <PIN pinname="Enabled" visible="1">
+   <PIN pinname="Enabled" visible="1" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE systemname="Scale (Transform)" nodename="Scale (Transform)" componentmode="Hidden" id="88">
@@ -1143,7 +1143,7 @@
    </PIN>
    <PIN pinname="Alpha" slicecount="1" values="0.42">
    </PIN>
-   <PIN pinname="Enabled" visible="1">
+   <PIN pinname="Enabled" visible="1" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE systemname="Scale (Transform)" nodename="Scale (Transform)" componentmode="Hidden" id="94">
@@ -1208,10 +1208,6 @@
    </LINK>
    <LINK srcnodeid="63" srcpinname="Output" dstnodeid="92" dstpinname="Z">
    </LINK>
-   <LINK srcnodeid="44" srcpinname="Input Value" dstnodeid="89" dstpinname="Enabled">
-   </LINK>
-   <LINK srcnodeid="70" srcpinname="Input Value" dstnodeid="95" dstpinname="Enabled">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="96" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="5850" top="4680" width="795" height="240">
    </BOUNDS>
@@ -1244,48 +1240,12 @@
    </LINK>
    <LINK srcnodeid="96" srcpinname="Y Output Value" dstnodeid="94" dstpinname="Z">
    </LINK>
-   <NODE systemname="spreadedmeshjoin" filename="spreadedmeshjoin.v4p" nodename="spreadedmeshjoin.v4p" componentmode="Hidden" id="108">
-   <BOUNDS type="Node" left="15765" top="13965" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="TranslateX" visible="1">
-   </PIN>
-   <PIN pinname="TranslateY" visible="1">
-   </PIN>
-   <PIN pinname="TranslateZ" visible="1">
-   </PIN>
-   <PIN pinname="ScaleX" visible="1">
-   </PIN>
-   <PIN pinname="ScaleY" visible="1">
-   </PIN>
-   <PIN pinname="ScaleZ" visible="1">
-   </PIN>
-   <PIN pinname="Mesh" visible="1">
-   </PIN>
-   <PIN pinname="Pitch" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="textureCount" slicecount="1" values="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="28" srcpinname="Output" dstnodeid="108" dstpinname="TranslateX" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="27" srcpinname="Output" dstnodeid="108" dstpinname="TranslateY" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="26" srcpinname="Output" dstnodeid="108" dstpinname="TranslateZ" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="96" srcpinname="Y Output Value" dstnodeid="108" dstpinname="ScaleX" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="96" srcpinname="Y Output Value" dstnodeid="108" dstpinname="ScaleY" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="96" srcpinname="Y Output Value" dstnodeid="108" dstpinname="ScaleZ" hiddenwhenlocked="1">
-   </LINK>
    <NODE systemname="Writer (EX9.Geometry XFile)" nodename="Writer (EX9.Geometry XFile)" componentmode="Hidden" id="110">
    <BOUNDS type="Node" left="15780" top="15975" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Mesh" visible="1">
+   <PIN pinname="Mesh" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <LINK srcnodeid="108" srcpinname="Mesh" dstnodeid="110" dstpinname="Mesh">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="111" systemname="IOBox (String)">
    <BOUNDS type="Box" left="15990" top="15270" width="1920" height="285">
    </BOUNDS>
@@ -1330,14 +1290,12 @@
    <PIN pinname="Mesh" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="130" srcpinname="Mesh" dstnodeid="108" dstpinname="Mesh">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="144" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="6090" top="7155" width="795" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="6090" top="7155" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="2.64">
+   <PIN pinname="Y Input Value" slicecount="1" values="1.5">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1413,5 +1371,37 @@
    <LINK srcnodeid="169" srcpinname="Input Value" dstnodeid="172" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="172" srcpinname="Output" dstnodeid="23" dstpinname="Enabled">
+   </LINK>
+   <NODE systemname="LinearSpread (Spreads)" nodename="LinearSpread (Spreads)" componentmode="Hidden" id="173">
+   <BOUNDS type="Node" left="16065" top="13125" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Spread Count" slicecount="1" values="3">
+   </PIN>
+   </NODE>
+   <NODE systemname="spreadedmeshjoin" filename="spreadedmeshjoin.v4p" nodename="spreadedmeshjoin.v4p" componentmode="Hidden" id="174">
+   <BOUNDS type="Node" left="15765" top="13965" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="TranslateZ" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="ScaleX" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="ScaleY" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="ScaleZ" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Pitch" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Yaw" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Roll" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="174" srcpinname="Mesh" dstnodeid="110" dstpinname="Mesh">
+   </LINK>
+   <LINK srcnodeid="130" srcpinname="Mesh" dstnodeid="174" dstpinname="Mesh">
+   </LINK>
+   <LINK srcnodeid="173" srcpinname="Output" dstnodeid="174" dstpinname="TranslateX">
    </LINK>
    </PATCH>
