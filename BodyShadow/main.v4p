@@ -2,16 +2,8 @@
    <PATCH nodename="X:\BodyShadow\body-shadow\BodyShadow\main.v4p" systemname="01.04.applyforce__Test" filename="E:\Tattoo\BulletSamples\Sample Patches\01.04.applyforce__Test.v4p" scrollx="30" scrolly="-360">
    <BOUNDS type="Window" left="29220" top="0" width="15675" height="15585">
    </BOUNDS>
-   <NODE systemname="DX9Texture (EX9.Texture)" nodename="DX9Texture (EX9.Texture)" componentmode="Hidden" id="10">
-   <BOUNDS type="Node" left="2025" top="14295" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Source" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Texture Out" visible="1">
-   </PIN>
-   </NODE>
    <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="9">
-   <BOUNDS type="Node" left="645" top="10185" width="6840" height="270">
+   <BOUNDS type="Node" left="645" top="10185" width="5595" height="270">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -19,7 +11,7 @@
    </PIN>
    <PIN pinname="Layer 2" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Layer Template Count" slicecount="1" values="5">
+   <PIN pinname="Layer Template Count" slicecount="1" values="4">
    </PIN>
    <PIN pinname="Layer 3" visible="1" slicecount="1" values="||">
    </PIN>
@@ -30,16 +22,6 @@
    <PIN pinname="Layer 6" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Layer 7" visible="1" slicecount="1" values="||">
-   </PIN>
-   </NODE>
-   <NODE systemname="AspectRatio (Transform)" nodename="AspectRatio (Transform)" componentmode="Hidden" id="8">
-   <BOUNDS type="Node" left="3720" top="13845" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Aspect Width" visible="1" slicecount="1" values="614">
-   </PIN>
-   <PIN pinname="Aspect Height" visible="1" slicecount="1" values="1040">
-   </PIN>
-   <PIN pinname="Transform Out" visible="1">
    </PIN>
    </NODE>
    <PACK Name="addonpack" Version="33.3.0">
@@ -71,9 +53,9 @@
    <LINK srcnodeid="228" srcpinname="Layer" dstnodeid="9" dstpinname="Layer 1">
    </LINK>
    <NODE systemname="LegModel" filename="LegModel.v4p" nodename="LegModel.v4p" componentmode="Hidden" id="230">
-   <BOUNDS type="Node" left="3465" top="9645" width="1530" height="270">
+   <BOUNDS type="Node" left="3420" top="9645" width="1530" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="9435" top="2880" width="16380" height="11415">
+   <BOUNDS type="Window" left="30150" top="4200" width="16380" height="11415">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -89,54 +71,12 @@
    </PIN>
    <PIN pinname="colorLeg" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="3465" top="9645">
+   <BOUNDS type="Box" left="3420" top="9645">
    </BOUNDS>
    <PIN pinname="3d model" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="230" srcpinname="Layer" dstnodeid="9" dstpinname="Layer 3">
-   </LINK>
-   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="Hidden" id="11" border="1" stayontop="1">
-   <BOUNDS type="Node" left="2025" top="13830" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="2025" top="13830" width="2400" height="1800">
-   </BOUNDS>
-   <BOUNDS type="Window" left="0" top="0" width="8265" height="14220">
-   </BOUNDS>
-   <PIN pinname="EX9 Out" visible="1">
-   </PIN>
-   <PIN pinname="Layers" visible="1">
-   </PIN>
-   <PIN pinname="Actual Backbuffer Width" visible="1">
-   </PIN>
-   <PIN pinname="Actual Backbuffer Height" visible="1">
-   </PIN>
-   <PIN pinname="Aspect Ratio" visible="1">
-   </PIN>
-   <PIN pinname="View" visible="1">
-   </PIN>
-   <PIN pinname="Projection" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="D24X8">
-   </PIN>
-   <PIN pinname="Background Color" slicecount="1" values="|0.00000,0.00000,0.00000,1.00000|">
-   </PIN>
-   <PIN pinname="Backbuffer Height" slicecount="1" values="1920">
-   </PIN>
-   <PIN pinname="Backbuffer Width" slicecount="1" values="1080">
-   </PIN>
-   <PIN pinname="Fullscreen Depthbuffer Format" slicecount="1" values="D16">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="11" srcpinname="EX9 Out" dstnodeid="10" dstpinname="Source">
-   </LINK>
-   <LINK srcnodeid="9" srcpinname="Layer" dstnodeid="11" dstpinname="Layers">
-   </LINK>
-   <LINK srcnodeid="11" srcpinname="Actual Backbuffer Width" dstnodeid="8" dstpinname="Aspect Width">
-   </LINK>
-   <LINK srcnodeid="11" srcpinname="Actual Backbuffer Height" dstnodeid="8" dstpinname="Aspect Height">
-   </LINK>
-   <LINK srcnodeid="8" srcpinname="Transform Out" dstnodeid="11" dstpinname="Aspect Ratio">
    </LINK>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="232">
    <BOUNDS type="Node" left="6060" top="540" width="100" height="100">
@@ -159,71 +99,15 @@
    </PIN>
    </NODE>
    <NODE systemname="GUI" filename="GUI.v4p" nodename="GUI.v4p" componentmode="Hidden" id="235" border="1">
-   <BOUNDS type="Node" left="3420" top="14925" width="2430" height="270">
+   <BOUNDS type="Node" left="7455" top="11670" width="2430" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="29145" top="0" width="20145" height="14820">
+   <BOUNDS type="Window" left="29940" top="3015" width="20145" height="14820">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="3420" top="14925">
+   <BOUNDS type="Box" left="7455" top="11670">
    </BOUNDS>
    </NODE>
-   <NODE systemname="Quad (DX9)" nodename="Quad (DX9)" componentmode="Hidden" id="237">
-   <BOUNDS type="Node" left="2025" top="14925" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Texture" visible="1">
-   </PIN>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   <PIN pinname="Transform" visible="1">
-   </PIN>
-   <PIN pinname="Render State" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="10" srcpinname="Texture Out" dstnodeid="237" dstpinname="Texture">
-   </LINK>
-   <NODE systemname="UniformScale (Transform)" nodename="UniformScale (Transform)" componentmode="Hidden" id="239">
-   <BOUNDS type="Node" left="3015" top="14325" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Transform Out" visible="1">
-   </PIN>
-   <PIN pinname="XYZ" slicecount="1" values="2">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="239" srcpinname="Transform Out" dstnodeid="237" dstpinname="Transform">
-   </LINK>
-   <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="240">
-   <BOUNDS type="Node" left="630" top="16110" width="4275" height="270">
-   </BOUNDS>
-   <PIN pinname="Layer 1" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   <PIN pinname="Layer 2" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Layer Template Count" slicecount="1" values="3">
-   </PIN>
-   <PIN pinname="Layer 3" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="241" border="1">
-   <BOUNDS type="Node" left="630" top="16845" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="630" top="16845" width="2400" height="1800">
-   </BOUNDS>
-   <BOUNDS type="Window" left="20490" top="0" width="8730" height="15615">
-   </BOUNDS>
-   <PIN pinname="Layers" visible="1">
-   </PIN>
-   <PIN pinname="Actual Backbuffer Width" visible="1">
-   </PIN>
-   <PIN pinname="Actual Backbuffer Height" visible="1">
-   </PIN>
-   <PIN pinname="Aspect Ratio" visible="1" slicecount="1" values="||">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="240" srcpinname="Layer" dstnodeid="241" dstpinname="Layers">
-   </LINK>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="243">
    <BOUNDS type="Node" left="660" top="6615" width="100" height="100">
    </BOUNDS>
@@ -247,50 +131,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="244" srcpinname="Bang" dstnodeid="245" dstpinname="Input Value">
-   </LINK>
-   <NODE systemname="Rotate (Transform)" nodename="Rotate (Transform)" componentmode="Hidden" id="246">
-   <BOUNDS type="Node" left="3135" top="12945" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Transform Out" visible="1">
-   </PIN>
-   <PIN pinname="X" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Y" slicecount="1" visible="1" values="0.91">
-   </PIN>
-   </NODE>
-   <NODE systemname="LFO (Animation)" nodename="LFO (Animation)" componentmode="Hidden" id="247">
-   <BOUNDS type="Node" left="3135" top="12570" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Period" slicecount="1" values="20">
-   </PIN>
-   <PIN pinname="Pause" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="247" srcpinname="Output" dstnodeid="246" dstpinname="Y">
-   </LINK>
-   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="248">
-   <BOUNDS type="Node" left="3315" top="11775" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="|camera rotate|">
-   </PIN>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="NOT (Boolean)" nodename="NOT (Boolean)" componentmode="Hidden" id="249">
-   <BOUNDS type="Node" left="3315" top="12150" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="248" srcpinname="Input Value" dstnodeid="249" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="249" srcpinname="Output" dstnodeid="247" dstpinname="Pause">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="259" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="8595" top="540" width="5970" height="5250">
@@ -323,11 +163,11 @@
    <LINK srcnodeid="259" srcpinname="Y Output Value" dstnodeid="228" dstpinname="XueWeiPosition" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="CreateTattoo" filename="CreateTattoo.v4p" nodename="CreateTattoo.v4p" componentmode="Hidden" id="260">
-   <BOUNDS type="Node" left="5295" top="9615" width="1200" height="270">
+   <BOUNDS type="Node" left="4080" top="11670" width="2640" height="270">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
-   <BOUNDS type="Window" left="9135" top="600" width="14685" height="15600">
+   <BOUNDS type="Window" left="5805" top="585" width="14685" height="15600">
    </BOUNDS>
    <PIN pinname="Reset" slicecount="1" visible="1" values="0">
    </PIN>
@@ -335,95 +175,11 @@
    </PIN>
    <PIN pinname="tattooTexture" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="5295" top="9615">
+   <BOUNDS type="Box" left="4080" top="11670">
    </BOUNDS>
    </NODE>
-   <NODE systemname="Perspective (Transform)" nodename="Perspective (Transform)" componentmode="Hidden" id="264">
-   <BOUNDS type="Node" left="3315" top="13425" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Transform Out" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="264" srcpinname="Transform Out" dstnodeid="11" dstpinname="Projection">
-   </LINK>
-   <NODE systemname="Translate (Transform)" nodename="Translate (Transform)" componentmode="Hidden" id="265">
-   <BOUNDS type="Node" left="2505" top="11805" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Transform Out" visible="1">
-   </PIN>
-   <PIN pinname="Z" slicecount="1" values="58.91">
-   </PIN>
-   <PIN pinname="Y" slicecount="1" values="-42.68">
-   </PIN>
-   <PIN pinname="X" slicecount="1" values="8.1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="265" srcpinname="Transform Out" dstnodeid="246" dstpinname="Transform In">
-   </LINK>
-   <LINK srcnodeid="235" srcpinname="Layer" dstnodeid="240" dstpinname="Layer 3">
-   </LINK>
-   <NODE systemname="Blend (EX9.RenderState)" nodename="Blend (EX9.RenderState)" componentmode="Hidden" id="269">
-   <BOUNDS type="Node" left="1455" top="14310" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Render State Out" visible="1">
-   </PIN>
-   <PIN pinname="Draw Mode" slicecount="1" values="Add">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="269" srcpinname="Render State Out" dstnodeid="237" dstpinname="Render State">
-   </LINK>
-   <NODE id="266" systemname="Quad (DX9)" filename="" nodename="Quad (DX9)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" left="615" top="14925" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Layer" visible="1" pintype="Output">
-   </PIN>
-   <BOUNDS type="Box" left="615" top="14925" width="4800" height="3600">
-   </BOUNDS>
-   <PIN pinname="Texture" visible="1" pintype="Input">
-   </PIN>
-   <BOUNDS type="Window" left="11805" top="3210" width="17145" height="9105">
-   </BOUNDS>
-   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Blend Mode" pintype="Input" visible="1">
-   </PIN>
-   <PIN pinname="Transform" pintype="Input" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Color" pintype="Input" visible="1" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
-   </PIN>
-   <PIN pinname="Texture Transform" pintype="Input" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Color Transform" pintype="Input" visible="1">
-   </PIN>
-   <PIN pinname="Z" pintype="Input" visible="-1">
-   </PIN>
-   <PIN pinname="Enable Depth" pintype="Input" visible="-1">
-   </PIN>
-   <PIN pinname="Enabled" pintype="Input" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Evaluate" pintype="Input" visible="-1">
-   </PIN>
-   <PIN pinname="Window Handle" pintype="Output" visible="-1">
-   </PIN>
-   <PIN pinname="Patch" pintype="Output" visible="-1">
-   </PIN>
-   <PIN pinname="ID" pintype="Output" visible="-1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="260" srcpinname="tattooTexture" dstnodeid="266" dstpinname="Texture">
-   </LINK>
-   <NODE systemname="Scale (Transform)" nodename="Scale (Transform)" componentmode="Hidden" id="270">
-   <BOUNDS type="Node" left="585" top="14430" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Transform Out" visible="1">
-   </PIN>
-   <PIN pinname="X" slicecount="1" values="2">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="270" srcpinname="Transform Out" dstnodeid="266" dstpinname="Transform">
-   </LINK>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="271">
-   <BOUNDS type="Node" left="7170" top="9015" width="100" height="100">
+   <BOUNDS type="Node" left="5790" top="11190" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1">
    </PIN>
@@ -489,50 +245,28 @@
    <LINK srcnodeid="274" srcpinname="fps" dstnodeid="275" dstpinname="Y Input Value">
    </LINK>
    <NODE systemname="LineEffect_2" filename="LineEffect_2.v4p" nodename="LineEffect_2.v4p" componentmode="Hidden" id="276">
-   <BOUNDS type="Node" left="5280" top="8970" width="1530" height="270">
+   <BOUNDS type="Node" left="5085" top="9645" width="1530" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="2355" top="1185" width="18900" height="13365">
+   <BOUNDS type="Window" left="29085" top="780" width="18900" height="13365">
    </BOUNDS>
    <PIN pinname="particles_position" visible="1">
    </PIN>
    <PIN pinname="Layer" visible="1">
    </PIN>
-   <PIN pinname="EffectSwitch" visible="1">
+   <PIN pinname="EffectSwitch" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Frame Count" visible="1">
+   <PIN pinname="Frame Count" visible="1" slicecount="1" values="300">
    </PIN>
+   <PIN pinname="Up" slicecount="1" values="0">
+   </PIN>
+   <BOUNDS type="Box" left="5085" top="9645">
+   </BOUNDS>
    </NODE>
-   <LINK srcnodeid="237" srcpinname="Layer" dstnodeid="240" dstpinname="Layer 2">
-   </LINK>
-   <LINK srcnodeid="266" srcpinname="Layer" dstnodeid="240" dstpinname="Layer 1">
-   </LINK>
    <LINK srcnodeid="228" srcpinname="PositionXYZ" dstnodeid="276" dstpinname="particles_position" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="276" srcpinname="Layer" dstnodeid="9" dstpinname="Layer 4">
    </LINK>
    <LINK srcnodeid="276" srcpinname="Layer" dstnodeid="260" dstpinname="Layers">
-   </LINK>
-   <LINK srcnodeid="246" srcpinname="Transform Out" dstnodeid="11" dstpinname="View">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="279" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="5580" top="8250" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="5580" top="8250" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Bang">
-   </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="279" srcpinname="Y Output Value" dstnodeid="276" dstpinname="Up">
    </LINK>
    <NODE systemname="TextLable" filename="TextLable.v4p" nodename="TextLable.v4p" componentmode="Hidden" id="282">
    <BOUNDS type="Node" left="2010" top="9645" width="1155" height="270">
@@ -554,40 +288,22 @@
    </LINK>
    <LINK srcnodeid="271" srcpinname="Input Value" dstnodeid="260" dstpinname="Reset">
    </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="283" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="6330" top="8250" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="6330" top="8250" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="283" srcpinname="Y Output Value" dstnodeid="276" dstpinname="EffectSwitch">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="284" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="7110" top="8475" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="7110" top="8475" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="300">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Integer">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="284" srcpinname="Y Output Value" dstnodeid="276" dstpinname="Frame Count">
-   </LINK>
    <LINK srcnodeid="243" srcpinname="Input Value" dstnodeid="228" dstpinname="reset">
+   </LINK>
+   <NODE systemname="Output" filename="Output.v4p" nodename="Output.v4p" componentmode="Hidden" id="283">
+   <BOUNDS type="Node" left="645" top="13695" width="6855" height="270">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="tattoo layers" visible="1">
+   </PIN>
+   <PIN pinname="Layer GUI" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="9" srcpinname="Layer" dstnodeid="283" dstpinname="Layers">
+   </LINK>
+   <LINK srcnodeid="260" srcpinname="tattooTexture" dstnodeid="283" dstpinname="tattoo layers">
+   </LINK>
+   <LINK srcnodeid="235" srcpinname="Layer" dstnodeid="283" dstpinname="Layer GUI">
    </LINK>
    </PATCH>
