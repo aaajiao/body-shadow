@@ -1,4 +1,4 @@
-BodyShadow 1.0
+BodyShadow 1.3
 
 Introduction:
 
@@ -33,4 +33,4 @@ I Use the kinect and KScan3D(http://www.kscan3d.com) to scan the leg. You can us
 
 2.Cylindrical map your 3d model into UV coordinates (http://en.wikipedia.org/wiki/UV_mapping). You can do this in 3d softwares like MAYA or 3dmax. 
 
-3.Import your model into this software and add acupuncture points.
+3.Import your model into this software and add acupuncture points based on Meridian theory (http://en.wikipedia.org/wiki/Meridian_(Chinese_medicine)).
