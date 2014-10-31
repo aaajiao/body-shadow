@@ -1,11 +1,12 @@
 BodyShadow 1.3
+===========
 
-Introduction:
+<b>Introduction:</b>
 
 BodyShadow creates a particle system which explains Merdian-collateral theory of Traditional Chinese Medicine in your 3d-scan body model. You can produce new kind of tattoo images by using this system.
 BodyShadow is programed with vvvv and Bullet Physics.
 
-Installation：
+<b>Installation：</b>
 
 1.About vvvv（http://vvvv.org ）：
 vvvv is a hybrid visual/textual live-programming environment for easy prototyping and development. It is designed to facilitate the handling of large media environments with physical interfaces, real-time motion graphics, audio and video that can interact with many users simultaneously. Responsible for its development is the vvvv group.
@@ -14,7 +15,7 @@ vvvv is a hybrid visual/textual live-programming environment for easy prototypin
 
 3.BodyShadow use google NotoSansCJKsc-Medium font, so you can download from https://www.google.com/get/noto/#/family/noto-sans-hans , or you can find the font file in the Fonts folder.
 
-Use BodyShadow:
+<b>Use BodyShadow:</b>
 
 1.Run main.v4p to start the sofetware.
 
@@ -26,7 +27,7 @@ Use BodyShadow:
 
 5.Once you create a nice path, turn off the "on tracking" button, and click "create tattoo". After the tattoo image rendering, you can click "tattoo result" to check the result. You can also find the tattoo picture in folder "OutputImage". Click "reset partices" you can start whole process again.
 
-Create tattoo based on your own body!
+<b>Create tattoo based on your own body!</b>
 
 1.Scan your body!
 I Use the kinect and KScan3D(http://www.kscan3d.com) to scan the leg. You can use other software to do the job.
