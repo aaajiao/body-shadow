@@ -1,13 +1,13 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\BodyShadow\body-shadow\BodyShadow_DX11\_ROOT.v4p" systemname="_ROOT" filename="X:\BodyShadow\body-shadow\BodyShadow_DX11\_ROOT.v4p" scrollx="0" scrolly="10440" locked="0">
-   <BOUNDS type="Window" left="14100" top="3135" width="19005" height="11085">
+   <PATCH nodename="D:\BodyShadow\body-shadow\BodyShadow_DX11\_ROOT.v4p" systemname="_ROOT" filename="X:\BodyShadow\body-shadow\BodyShadow_DX11\_ROOT.v4p" scrollx="0" scrolly="-360" locked="0">
+   <BOUNDS type="Window" left="4965" top="4935" width="19005" height="11085">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
    <NODE systemname="LegModel" filename="LegModel.v4p" nodename="LegModel.v4p" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="2355" top="15030" width="2490" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="7320" top="450" width="19575" height="15600">
+   <BOUNDS type="Window" left="7005" top="1995" width="19575" height="15600">
    </BOUNDS>
    <PIN pinname="Layer Out" visible="1">
    </PIN>
@@ -22,6 +22,8 @@
    <PIN pinname="DMeshEnabled" visible="1">
    </PIN>
    <PIN pinname="XueWeiNameEnabled" visible="1">
+   </PIN>
+   <PIN pinname="TattooEnabled" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="11">
@@ -164,7 +166,11 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="XueWei_Position">
    </PIN>
    </NODE>
-   <LINK srcnodeid="14" srcpinname="Y Output Value" dstnodeid="13" dstpinname="PositionXYZ" hiddenwhenlocked="1">
+   <LINK srcnodeid="14" srcpinname="Y Output Value" dstnodeid="13" dstpinname="PositionXYZ" hiddenwhenlocked="1" linkstyle="Bezier">
+   <LINKPOINT x="2325" y="10905">
+   </LINKPOINT>
+   <LINKPOINT x="3450" y="10905">
+   </LINKPOINT>
    </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="17">
    <BOUNDS type="Node" left="1425" top="4545" width="100" height="100">
@@ -189,31 +195,17 @@
    <NODE systemname="CreateTattoo" filename="CreateTattoo.v4p" nodename="CreateTattoo.v4p" componentmode="Hidden" id="74">
    <BOUNDS type="Node" left="10695" top="15195" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="4680" top="1095" width="14685" height="11820">
+   <BOUNDS type="Window" left="1095" top="1650" width="18285" height="12930">
    </BOUNDS>
    <PIN pinname="Layer" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Reset" slicecount="1" values="0">
+   <PIN pinname="Reset" slicecount="1" values="0" visible="1">
    </PIN>
    <PIN pinname="Buffers" visible="1">
    </PIN>
    <BOUNDS type="Box" left="10695" top="15195">
    </BOUNDS>
    </NODE>
-   <NODE systemname="Group (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Group (DX11.Layer)" componentmode="Hidden" id="75">
-   <BOUNDS type="Node" left="10695" top="14835" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Layer 1" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Layer 2" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Layer Out" visible="1">
-   </PIN>
-   <BOUNDS type="Box" left="10695" top="14835">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="75" srcpinname="Layer Out" dstnodeid="74" dstpinname="Layer">
-   </LINK>
    <NODE systemname="CurveLine" filename="CurveLine.v4p" nodename="CurveLine.v4p" componentmode="Hidden" id="96">
    <BOUNDS type="Node" left="5130" top="15030" width="2460" height="270">
    </BOUNDS>
@@ -240,7 +232,11 @@
    <PIN pinname="color_data" slicecount="1" visible="1" values="|1.25000,0.30000,0.00000,0.60000|">
    </PIN>
    </NODE>
-   <LINK srcnodeid="14" srcpinname="Y Output Value" dstnodeid="0" dstpinname="XYZ" hiddenwhenlocked="1">
+   <LINK srcnodeid="14" srcpinname="Y Output Value" dstnodeid="0" dstpinname="XYZ" hiddenwhenlocked="1" linkstyle="Bezier">
+   <LINKPOINT x="2325" y="11348">
+   </LINKPOINT>
+   <LINKPOINT x="3825" y="11348">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="0" srcpinname="Layer Out" dstnodeid="12" dstpinname="Layer 1">
    </LINK>
@@ -266,7 +262,11 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="XueWeiName">
    </PIN>
    </NODE>
-   <LINK srcnodeid="157" srcpinname="Output String" dstnodeid="0" dstpinname="XueWeiName" hiddenwhenlocked="1">
+   <LINK srcnodeid="157" srcpinname="Output String" dstnodeid="0" dstpinname="XueWeiName" hiddenwhenlocked="1" linkstyle="Bezier">
+   <LINKPOINT x="5325" y="11348">
+   </LINKPOINT>
+   <LINKPOINT x="4335" y="11348">
+   </LINKPOINT>
    </LINK>
    <NODE systemname="Curverope" filename="MultiRope\Curverope.v4p" nodename="MultiRope\Curverope.v4p" componentmode="Hidden" id="164">
    <BOUNDS type="Node" left="7890" top="15030" width="2115" height="270">
@@ -312,7 +312,11 @@
    <PIN pinname="RestParticlesSystem" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="14" srcpinname="Y Output Value" dstnodeid="170" dstpinname="Input" hiddenwhenlocked="1">
+   <LINK srcnodeid="14" srcpinname="Y Output Value" dstnodeid="170" dstpinname="Input" hiddenwhenlocked="1" linkstyle="Bezier">
+   <LINKPOINT x="2325" y="10448">
+   </LINKPOINT>
+   <LINKPOINT x="2355" y="10448">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="170" srcpinname="reset" dstnodeid="13" dstpinname="reset">
    </LINK>
@@ -378,14 +382,18 @@
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <LINK srcnodeid="174" srcpinname="Y Output Value" dstnodeid="0" dstpinname="SkinEnabled" hiddenwhenlocked="1">
+   <LINK srcnodeid="174" srcpinname="Y Output Value" dstnodeid="0" dstpinname="SkinEnabled" hiddenwhenlocked="1" linkstyle="Bezier">
+   <LINKPOINT x="6840" y="10043">
+   </LINKPOINT>
+   <LINKPOINT x="2385" y="10043">
+   </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="175" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="6840" top="5475" width="2655" height="450">
    </BOUNDS>
    <BOUNDS type="Node" left="6840" top="5475" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -397,10 +405,14 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="DMeshEnabled">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <LINK srcnodeid="175" srcpinname="Y Output Value" dstnodeid="0" dstpinname="DMeshEnabled" hiddenwhenlocked="1">
+   <LINK srcnodeid="175" srcpinname="Y Output Value" dstnodeid="0" dstpinname="DMeshEnabled" hiddenwhenlocked="1" linkstyle="Bezier">
+   <LINKPOINT x="6840" y="10478">
+   </LINKPOINT>
+   <LINKPOINT x="3360" y="10478">
+   </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="176" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="6840" top="6315" width="2685" height="420">
@@ -422,7 +434,11 @@
    <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="176" srcpinname="Y Output Value" dstnodeid="0" dstpinname="XueWeiNameEnabled" hiddenwhenlocked="1">
+   <LINK srcnodeid="176" srcpinname="Y Output Value" dstnodeid="0" dstpinname="XueWeiNameEnabled" hiddenwhenlocked="1" linkstyle="Bezier">
+   <LINKPOINT x="6855" y="10883">
+   </LINKPOINT>
+   <LINKPOINT x="4815" y="10883">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="96" srcpinname="Layer" dstnodeid="12" dstpinname="Layer 3">
    </LINK>
@@ -444,7 +460,11 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="XueWeiEnabled">
    </PIN>
    </NODE>
-   <LINK srcnodeid="177" srcpinname="Y Output Value" dstnodeid="13" dstpinname="XueWeiEnabled" hiddenwhenlocked="1">
+   <LINK srcnodeid="177" srcpinname="Y Output Value" dstnodeid="13" dstpinname="XueWeiEnabled" hiddenwhenlocked="1" linkstyle="Bezier">
+   <LINKPOINT x="6855" y="10860">
+   </LINKPOINT>
+   <LINKPOINT x="6375" y="10860">
+   </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="178" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="10035" top="5475" width="3045" height="420">
@@ -466,7 +486,11 @@
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <LINK srcnodeid="178" srcpinname="Y Output Value" dstnodeid="170" dstpinname="RestParticlesSystem" hiddenwhenlocked="1">
+   <LINK srcnodeid="178" srcpinname="Y Output Value" dstnodeid="170" dstpinname="RestParticlesSystem" hiddenwhenlocked="1" linkstyle="Bezier">
+   <LINKPOINT x="10035" y="9563">
+   </LINKPOINT>
+   <LINKPOINT x="6405" y="9563">
+   </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="179" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="10035" top="4620" width="3045" height="420">
@@ -490,9 +514,17 @@
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <LINK srcnodeid="179" srcpinname="Y Output Value" dstnodeid="13" dstpinname="Do Create" hiddenwhenlocked="1">
+   <LINK srcnodeid="179" srcpinname="Y Output Value" dstnodeid="13" dstpinname="Do Create" hiddenwhenlocked="1" linkstyle="Bezier">
+   <LINKPOINT x="10035" y="9593">
+   </LINKPOINT>
+   <LINKPOINT x="5295" y="9593">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="179" srcpinname="Y Output Value" dstnodeid="96" dstpinname="reset" hiddenwhenlocked="1">
+   <LINK srcnodeid="179" srcpinname="Y Output Value" dstnodeid="96" dstpinname="reset" hiddenwhenlocked="1" linkstyle="Bezier">
+   <LINKPOINT x="10035" y="10035">
+   </LINKPOINT>
+   <LINKPOINT x="5850" y="10035">
+   </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="180" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="13830" top="4620" width="2640" height="450">
@@ -514,7 +546,11 @@
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <LINK srcnodeid="180" srcpinname="Y Output Value" dstnodeid="164" dstpinname="TrackingEnable" hiddenwhenlocked="1">
+   <LINK srcnodeid="180" srcpinname="Y Output Value" dstnodeid="164" dstpinname="TrackingEnable" hiddenwhenlocked="1" linkstyle="Bezier">
+   <LINKPOINT x="13830" y="10050">
+   </LINKPOINT>
+   <LINKPOINT x="9465" y="10050">
+   </LINKPOINT>
    </LINK>
    <NODE componentmode="InABox" id="182" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
    <BOUNDS height="100" left="13800" top="5475" type="Node" width="100">
@@ -546,6 +582,64 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="LengthInput">
    </PIN>
    </NODE>
-   <LINK srcnodeid="182" srcpinname="X Output Value" dstnodeid="164" dstpinname="LengthInput" hiddenwhenlocked="1">
+   <LINK srcnodeid="182" srcpinname="X Output Value" dstnodeid="164" dstpinname="LengthInput" hiddenwhenlocked="1" linkstyle="Bezier">
+   <LINKPOINT x="13800" y="10448">
+   </LINKPOINT>
+   <LINKPOINT x="8970" y="10448">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="164" srcpinname="Layer" dstnodeid="74" dstpinname="Layer">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="183" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="13845" top="6450" width="2730" height="390">
+   </BOUNDS>
+   <BOUNDS type="Node" left="13845" top="6450" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="CreatTattoo">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="183" srcpinname="Y Output Value" dstnodeid="74" dstpinname="Reset" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="13860" y="11018">
+   </LINKPOINT>
+   <LINKPOINT x="11490" y="11018">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="184" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="13830" top="7185" width="2760" height="435">
+   </BOUNDS>
+   <BOUNDS type="Node" left="13830" top="7185" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="TattooEnabled">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="184" srcpinname="Y Output Value" dstnodeid="0" dstpinname="TattooEnabled" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="13830" y="11310">
+   </LINKPOINT>
+   <LINKPOINT x="2895" y="11310">
+   </LINKPOINT>
    </LINK>
    </PATCH>

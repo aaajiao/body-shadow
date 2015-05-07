@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\BodyShadow\body-shadow\BodyShadow_DX11\Output.v4p" systemname="Output" filename="X:\BodyShadow\body-shadow\BodyShadow\Output.v4p" scrollx="240" scrolly="0">
+   <PATCH nodename="D:\BodyShadow\body-shadow\BodyShadow_DX11\Output.v4p" systemname="Output" filename="X:\BodyShadow\body-shadow\BodyShadow\Output.v4p" scrollx="375" scrolly="-360">
    <BOUNDS type="Window" left="3540" top="2715" width="16320" height="12420">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -239,7 +239,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1245" top="9255" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="47985" top="-45" width="8415" height="15645">
+   <BOUNDS type="Window" left="48120" top="480" width="8415" height="15645">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>
@@ -445,7 +445,7 @@
    </PIN>
    <PIN pinname="X" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Y" slicecount="1" visible="1" values="-1.14">
+   <PIN pinname="Y" slicecount="1" values="-1.14" visible="1">
    </PIN>
    <PIN pinname="Z" slicecount="1" values="0">
    </PIN>

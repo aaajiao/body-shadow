@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
    <PATCH nodename="D:\BodyShadow\body-shadow\BodyShadow_DX11\LegModel.v4p" systemname="LegModel" filename="E:\Tattoo\main\LegModel.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="7005" top="1995" width="19575" height="15600">
+   <BOUNDS type="Window" left="7320" top="450" width="19575" height="15600">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -651,9 +651,7 @@
    </PIN>
    <PIN pinname="ScaleX" slicecount="1" values="2">
    </PIN>
-   <PIN pinname="ScaleY" slicecount="1" values="1.86">
-   </PIN>
-   <PIN pinname="TranslateY" slicecount="1" values="0.07">
+   <PIN pinname="ScaleY" slicecount="1" values="2">
    </PIN>
    </NODE>
    <LINK srcnodeid="161" srcpinname="Transform Out" dstnodeid="160" dstpinname="Transform">
