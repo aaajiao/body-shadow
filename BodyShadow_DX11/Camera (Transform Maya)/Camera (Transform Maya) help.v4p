@@ -1,0 +1,47 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv40beta16.dtd" >
+   <PATCH nodename="C:\Users\rainer\Desktop\Camera (Transform Maya) help.v4p" bgcolor="5177497" locked="0">
+   <BOUNDS height="3705" left="3540" top="840" type="Window" width="12525">
+   </BOUNDS>
+   <NODE componentmode="InABox" id="2" nodename="IOBox (String)" hiddenwhenlocked="1">
+   <BOUNDS height="0" left="270" top="285" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="160" left="6585" top="4950" type="Window" width="215">
+   </BOUNDS>
+   <BOUNDS height="2520" left="270" top="285" type="Box" width="11715">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Input String" slicecount="8" values="|CTRL + LEFT MOUSE BUTTON|,|ROTATE SCENE|,|CTRL + RIGHT MOUSE BUTTON|,|MOVE  SCENE|,|CTRL + MIDDLE MOUSE BUTTON|,|ZOOM IN AND OUT|,|R for 0.5sec|,|RESET TO DEFAULT VIEW|">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="Arial">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="17">
+   </PIN>
+   </NODE>
+   <NODE id="1" nodename="Kalle (VVVV)">
+   <BOUNDS height="0" left="5385" top="4380" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Background Kalle" slicecount="1" values="|0.60050,0.00000,0.30979,0.00000|">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="0" nodename="IOBox (String)">
+   <BOUNDS height="270" left="600" top="4320" type="Node" width="795">
+   </BOUNDS>
+   <BOUNDS height="480" left="600" top="4320" type="Box" width="3900">
+   </BOUNDS>
+   <BOUNDS height="160" left="0" top="0" type="Window" width="215">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|okay not 100% maya because ALT key is not available&cr;&lf;rrrrrrrrrrrrrrrrrrrrrrrrrrrr.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   </PATCH>
